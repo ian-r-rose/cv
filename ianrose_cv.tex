@@ -1,0 +1,192 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Ian Rose}}\vspace{1.5em} % Your name
+
+\Description{Computational geodynamicist}\vspace{2em} % Goal text
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+\NewEntry{email}{\href{mailto: ian.r.rose@gmail.com}{ian.r.rose@gmail.com}} % Email address
+
+\NewEntry{website}{\href{http://ianrose.website}{http://ianrose.website}} % Personal website
+
+\NewEntry{github}{\href{https://github.com/ian-r-rose}{ian-r-rose}} % Personal website
+
+\NewEntry{phone}{+1 (510) 332-7585 } % Phone number(s)
+
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{2005-2009}{Yale University}
+
+\Description{\MarginText{B.S.}Geology and Physics\newline 
+Thesis: \textit{Paleomagnetism of Mafic Dikes in the Northern Pilbara Craton, Western Australia}\newline
+Advisor: Professor Dave Evans\newline
+Thesis: \textit{Mantle rheology and the scaling of bending dissipation in plate tectonics}\newline
+Advisor: Professor Jun Korenaga}
+
+\NewEntry{2009-2016}{The University of California, Berkeley}
+
+\Description{\MarginText{Ph.D.}Earth and Planetary Science\newline 
+Thesis: \textit{True polar wander on convecting planets}\newline
+Advisor: Professor Bruce Buffett}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Publications}\vspace{1em}
+
+\Description{Rose, I. and Buffett, B.. \textit{Scaling for rates of true polar wander in convecting planets and moons}. Geophysical Journal International, in review.}
+
+%------------------------------------------------
+
+\Description{Rose, I. and Buffett, B.. \textit{Stability and accuracy of free surface time integration in viscous flows}. Physics of Earth and Planetary Interiors, in review.}
+
+%------------------------------------------------
+
+\Description{Cottaar, S., Heister, T., Rose, I., and Unterborn, C.. \textit{BurnMan: A lower mantle mineral physics toolkit}. Geochemistry, Geophysics, Geosystems, 2014.}
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	COMPUTING
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Computing}\vspace{1em}
+
+\Description{\MarginText{Languages} C, C++, Python, MATLAB/Octave, bash, awk, HTML}
+
+\Description{\MarginText{Software} \LaTeX, vim, git, IPython notebooks, standard *nix tools}
+
+\Description{\MarginText{Operating systems} Linux, Mac OS X, Windows}
+
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	SOFTWARE PROJECTS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Software Projects}\vspace{1em}
+
+\Description{\MarginText{ASPECT} Finite element software for mantle and lithospheric dynamics simulation. (frequent contributor)}
+
+\Description{\MarginText{BurnMan} Python library for generating thermodynamic and thermoelastic models of planetary materials. (co-author)}
+
+\Description{\MarginText{Interactive Earth} Educational software for teaching about the physics of planetary interiors, including thermal and thermochemical convection and seismic tomography. (author)}
+
+\Description{\MarginText{buckinghampy} Small educational Python module for performing dimensional analysis. (author)}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TEACHING
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Teaching}\vspace{1em}
+
+\Description{\textit{EPS 50: Planet Earth}. TA: Fall 2011, Fall 2012}
+
+\Description{\textit{EPS 109: Computer Simulations in Earth and Planetary Science}. TA: Fall 2013}
+
+\Description{\textit{EPS 108: History and Evolution of Planet Earth}. TA: Spring 2014}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TALKS AND CONFERENCE PROCEEDINGS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Talks and Conference Proceedings}\vspace{1em}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+\Description{Rose, I. \textit{Interactive investigations into planetary interiors}. Talk, AGU Fall Meeting 2015}
+\Description{Rose, I., Buffett, B., and Heister, T. \textit{Stable time integration of a free surface in geodynamics simulations}. Poster, AGU Fall Meeting 2015}
+\Description{Rose, I. \textit{True polar wander in convecting planets}. Computational Math seminar, Clemson University, April 2014}
+\Description{Cottaar, S., Heister, T., Rose, I., and Unterborn, C., \textit{An introduction to BurnMan}. Computational Infractructure for Geodynamics Webinar, October 2015}
+\Description{Rose, I. and Buffett, B.. \textit{Continents and Earth's rotational stability}. Poster, AGU Fall Meeting 2014}
+\Description{Rose, I. and Buffett, B.. \textit{Rates of true polar wander in convecting planets}. Poster, SEDI meeting 2014}
+\Description{Rose, I. and Buffett, B.. \textit{} Poster, AGU Fall Meeting 2012}
+\Description{Rose, I. and Buffett, B.. \textit{} Poster, AGU Fall Meeting 2011}
+\Description{Rose, I. and Manga, M.. \textit{} Poster, AGU Fall Meeting 2010}
+
+%------------------------------------------------
+
+\end{cv}
+
+\end{document}
