@@ -1,2 +1,2 @@
-ianrose_cv.pdf: ianrose_cv.tex classicthesis.sty
-	pdflatex ianrose_cv.tex
+ianrose_resume.pdf: ianrose_resume.tex classicthesis.sty
+	pdflatex ianrose_resume.tex
