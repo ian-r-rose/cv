@@ -37,6 +37,8 @@
 \newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
 \vspace{0.5em}} % Add some white space after each new entry
 
+\newcommand{\ContactInfo}[2]{\noindent \begin{flushright} {\small \textit{#1}}\hspace{1.5em} #2 \end{flushright}\vspace{-1.7em}} % Add some white space after each new entry
+
 \newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
 
 %----------------------------------------------------------------------------------------
@@ -49,30 +51,29 @@
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{cv}{\spacedallcaps{Ian Rose}}
+\begin{cv}{\hspace{-4em} \spacedallcaps{Ian Rose}}
   
-\vspace{.5em}
+\vspace{0.5em}
 
-\noindent Data scientist/geologist\vspace{1em} % Goal text
+  \hspace{-6.6em} Data scientist/geologist\vspace{1em} % Goal text
 
-\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+  \vspace{-5.4em}
+  \ContactInfo{email}{\href{mailto: ian.r.rose@gmail.com}{\hspace{0.9em} ian.r.rose@gmail.com}} % Email address
 
-\NewEntry{email}{\href{mailto: ian.r.rose@gmail.com}{ian.r.rose@gmail.com}} % Email address
+  \ContactInfo{website}{\href{https://ianrose.website}{https://ianrose.website}} % Personal website
 
-\NewEntry{website}{\href{https://ianrose.website}{http://ianrose.website}} % Personal website
+  \ContactInfo{github}{\href{https://github.com/ian-r-rose}{\hspace{5.2em} @ian-r-rose}} % Personal website
 
-\NewEntry{github}{\href{https://github.com/ian-r-rose}{ian-r-rose}} % Personal website
-
-\NewEntry{phone}{+1 (510) 332-7585 } % Phone number(s)
+  \ContactInfo{phone}{\hspace{2.5em} +1 (510) 332-7585 } % Phone number(s)
 
 
-\vspace{1em} % Extra space between major sections
+\vspace{3em} % Extra space between major sections
 
 %----------------------------------------------------------------------------------------
 %	WORK
 %----------------------------------------------------------------------------------------
 
-\noindent\spacedlowsmallcaps{Work and Education}\vspace{1em}
+\noindent\spacedallcaps{Work}\vspace{1em}
 
 \NewEntry{2018-present}{Quansight}
 
@@ -84,9 +85,12 @@ Contractor developing tools and integrations for data science practitioners.}
 \Description{\MarginText{Postdoctoral Fellow}
 Core developer for Project Jupyter. Developing JupyterLab, the next-generation frontend for Jupyter notebooks.}
 
+\vspace{1em} % Extra space between major sections
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
+\noindent\spacedallcaps{Education}\vspace{1em}
 
 \NewEntry{2009-2016}{The University of California, Berkeley}
 
@@ -105,9 +109,11 @@ Core developer for Project Jupyter. Developing JupyterLab, the next-generation f
 %	COMPUTING
 %----------------------------------------------------------------------------------------
 
-\noindent\spacedlowsmallcaps{Computing}\vspace{1em}
+\noindent\spacedallcaps{Computing}\vspace{1em}
 
 \Description{\MarginText{Languages} C, C++, Javascript, Typescript, Python, MATLAB/Octave, SQL, bash, awk, HTML, CSS}
+
+\Description{\MarginText{Methods} Ordinary/partial differential equations, GIS analysis, visualization and mapping, Monte Carlo sampling}
 
 \Description{\MarginText{Software} \LaTeX, git, node, Jupyter notebooks, standard *nix tools}
 
@@ -122,11 +128,11 @@ Core developer for Project Jupyter. Developing JupyterLab, the next-generation f
 %	SOFTWARE PROJECTS
 %----------------------------------------------------------------------------------------
 
-\noindent\spacedlowsmallcaps{Selected Software Projects}\vspace{1em}
+\noindent\spacedallcaps{Selected Software Projects}\vspace{1em}
 
 \Description{\MarginText{JupyterLab} Next generation front-end for Jupyter. (core developer)}
 
-\Description{\MarginText{Commuting Operation} Web app for what I want out of a real-time transit arrival service. (author)}
+\Description{\MarginText{Commuting Operation} Web application for what I want out of a real-time transit arrival service. (author)}
 
 \Description{\MarginText{Interactive Earth} Educational software for teaching about the physics of planetary interiors, including thermal and thermochemical convection and seismic tomography. (author)}
 
@@ -138,6 +144,7 @@ Core developer for Project Jupyter. Developing JupyterLab, the next-generation f
 
 %------------------------------------------------
 
+\date{}
 \end{cv}
 
 \end{document}
