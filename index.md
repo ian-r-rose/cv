@@ -6,10 +6,10 @@ title: Ian Rose
 Data science, software engineering, geophysics
 
 <div id="webaddress">
-<a href="mailto:ian.r.rose@gmail.com">ian.r.rose@gmail.com</a>
-| <a href="http://ianrose.website">ianrose.website</a>
-<br> <a href="http://github.com/ian-r-rose">ian-r-rose</a>
-| <a>(510) 332-7585</a>
+<a href="mailto:ian.r.rose@gmail.com" class="fa fa-home">&nbsp;ian.r.rose@gmail.com</a>
+| <a href="http://ianrose.website" class="fa fa-globe">&nbsp;ianrose.website</a>
+<br> <a href="http://github.com/ian-r-rose" class="fa fa-github">&nbsp;ian-r-rose</a>
+| <a class="fa fa-phone" >&nbsp;(510) 332-7585</a>
 </div>
 
 
