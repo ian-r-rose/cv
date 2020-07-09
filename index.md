@@ -17,7 +17,7 @@ Data science, software engineering, geophysics
 
 ### City of Los Angeles / Argus Associates
 
-`2019-present`
+`2019-`
 **Data Engineer/Data Scientist:** Full-time contractor with the City of Los Angeles' nascent Data Science and Predictive Analytics team. In my capacity supporting a small team of data analysts I have a number of roles:
 
 * Developing software tooling for government data analysis work
