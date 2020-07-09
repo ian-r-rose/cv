@@ -65,28 +65,34 @@ Thesis: *True polar wander on convecting planets*
 
 ### JupyterLab
 
-JupyterLab is a next-generation front-end for Jupyter kernels.
+[JupyterLab](https://jupyterlab.readthedocs.io/en/stable) is a next-generation front-end for Jupyter kernels.
 In addition to developing the core project,
 I have also helped to develop and shepherd the extension ecosystem,
 including extensions for working with Dask, GitHub, Google Drive, and LaTeX.
 
 ### Interactive Earth
 
-Interactive Earth is a piece of educational software I wrote for teaching about the physics of planetary interiors.
+[Interactive Earth](https://ian-r-rose.github.io/interactive_earth/index.html)
+is a piece of educational software I wrote for teaching about the physics of planetary interiors.
 It simulates real-time interactive simulations of fluid and solid dynamics,
 including thermal and themochemical convection and seismic wave propagation.
 It is written in C++/OpenGL, deployed to the web using WebAssembly/WebGL.
 
 ### Intake ecosystem
 
-I am a contributor to the Intake project, and author/maintainer of several intake drivers. These include drivers for GeoPandas and DCAT catalogs, which back many government open data portals.
+I am a contributor to the [Intake project](https://intake.readthedocs.io/en/latest/),
+and author/maintainer of several intake drivers.
+These include drivers for [GeoPandas](https://github.com/intake/intake_geopandas)
+and [DCAT catalogs](https://github.com/CityOfLosAngeles/intake-dcat),
+which back many government open data portals.
 
 ### PostGIS-Ibis-GeoPandas integration
 
 At the City of Los Angeles I support novice/intermediate Python data analysts who need to interact with geospatial data stored in traditional relational databases.
-To that end, I contributed support for geospatial operations to the Ibis project, targeting PostGIS databases.
+To that end, I [contributed](https://github.com/ibis-project/ibis/pull/1787)
+support for geospatial operations to the Ibis project, targeting PostGIS databases.
 This allows the user to write pythonic, pandas-like expressions which generate SQL to query the database.
-This allows for a smooth transition from large, possibly cloud-based vector geospatial data to an in-memory GeoDataFrame.
+enabling a smooth transition from large, possibly cloud-based vector geospatial data to an in-memory GeoDataFrame.
 
 ## Technical Skills
 
