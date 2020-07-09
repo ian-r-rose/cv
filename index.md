@@ -40,7 +40,7 @@ with the broader Python data science ecosystem.
 ### Berkeley Institute for Data Science
 
 `2016-2019`
-**Postdoctoral Fellow:** As a member of the Perez group
+**Postdoctoral Fellow:** As a member of the Peréz group
 I joined the JupyterLab development team, working on features like
 the third-party extension system, and real-time collaboration.
 My work there also brought me into collaboration with related groups such as the
